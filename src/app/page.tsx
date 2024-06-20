@@ -1,9 +1,12 @@
-"use client";
+import Link from "next/link";
+import React from "react";
 
-import { k } from "@/kaboom";
-
-export default function Home() {
-    k;
-
-    return <h1>Kaboom</h1>;
+function page() {
+    return (
+        <header>
+            <Link href={"/hook-form"}>Hook Form</Link>
+        </header>
+    );
 }
+
+export default page;
